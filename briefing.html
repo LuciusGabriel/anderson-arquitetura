@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRIEFING</title>
+</head>
+<body>
+    <form action="https://formsubmit.co/lucius_gabriel@hotmail.com" method="POST" id="formulario">
+        <fieldset>
+          <legend>Questionário de Briefing</legend>
+          <label>Cliente:</label><input class="campo_nome" name="nome" type="text"><br>
+          <label>Email:</label><input class="campo_email" name="email" type="email"><br>
+
+          <label>2. Selecione a opção que melhor se encaixa com o que precisa:</label><br>
+            <input type="radio" id="construcao-casa" name="first" value="construcao-casa">
+            <label for="construcao-casa">Construção de Casa</label><br>
+            <input type="radio" id="reforma-casa" name="first" value="reforma-casa">
+            <label for="reforma-casa">Reforma de Casa</label><br>
+            <input type="radio" id="reforma-total-ap" name="first" value="reforma-total-ap">
+            <label for="reforma-total-ap">Reforma Total de Apartamento</label><br>
+            <input type="radio" id="reforma-alg-amb" name="first" value="reforma-alg-amb">
+            <label for="reforma-alg-amb">Reforma de Alguns Ambientes</label><br>
+
+           <label>3. Selecione a opção que melhor se encaixa com o que precisa:</label><br>
+           <select name="second">
+                <option value="construcao-casa"selected>Construção de Casa</option>
+                <option value="reforma-casa">Reforma de Casa</option>
+                <option value="reforma-total-ap">Reforma Total de Apartamento</option>
+            </select><br>
+
+
+
+
+          <label>Mensagem:</label><br><textarea class="msg" name="mensagem" cols="35" rows="8"></textarea><br>
+          <input class="btn_submit" type="submit" value="Enviar">
+          <input type="hidden" name="_captcha" value="false">
+        </fieldset>
+
+      </form>
+</body>
+</html>
