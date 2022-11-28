@@ -80,3 +80,9 @@ nav li a:hover{
 footer{
     text-align: center;
 }
+
+@media (max-width: 500px) {
+    picture{
+        height: 20%;
+    }
+}
