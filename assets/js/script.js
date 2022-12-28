@@ -1,4 +1,4 @@
-/*function imagens(){
+function imagens(){
 
     var img = document.querySelector('#slide')
     var image = document.createElement('img')
@@ -8,4 +8,4 @@
 
     img.appendChild(image)
 
-}*/
+}
