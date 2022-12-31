@@ -9,3 +9,10 @@ function imagens(){
     img.appendChild(image)
 
 }
+
+scrollDown()
+function scrollDown(){
+    document.addEventListener('scroll', ()=>{
+        console.log('Scroll')
+    })
+}
