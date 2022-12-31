@@ -36,7 +36,8 @@ nav{
     background-color: #C4C4C4;
     position: absolute;
     top: 40%;
-    left: 56%;
+    left: 54%;
+    height: 22%;
 }
 
 nav ul{
@@ -120,12 +121,65 @@ h1{
 }
 
 
+.justify{
+    text-align: justify;
+}
+.center{
+    text-align: center;
+}
+
+
+/* SECTION SERVIÇOS*/
+#servicos{
+    width: 100%;
+}
+#servicos h3{
+    font-size: 1.3em;
+    text-align: center;
+    font-weight: 600;
+}
+.wrapper_servicos{
+    margin: 10px 0 10px 0;
+}
+.item-servico{
+    background-color: #b9cad75e;
+    border: 8px #FFF solid;
+    border-radius: 25px;
+    padding-top: 5px;
+}
+.img-servicos{
+    width: 20%;
+}
 /* SECTION PROJETOS */
+#projetos img{
+    cursor: pointer;
+}
 
 
+/* SECTION CONTATO*/
+#contato{
+    padding: 0 0 50px 0;
+}
+#contato input, textarea{
+    width: 20%;
+}
+
+#contato label{
+    font-weight: bold;
+}
+#contato button{
+    width: 10%;
+    height: 35px;
+    border: none;
+    background-color: #22292e;
+    color: #FFF;
+}
 
 footer{
     text-align: center;
+    background-color: #44515A;
+    color: #FFF;
+    padding: 30px 0px;
 }
 
 /* @media (min-width: 500px) {
