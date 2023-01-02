@@ -1,18 +1,7 @@
+const interval = 3000;
+
 function imagens(){
-
     var img = document.querySelector('#slide')
-    var image = document.createElement('img')
-
-    image.setAttribute('src', 'img/img-1.jpg')
-    image.setAttribute('id', 'imagem')
-
-    img.appendChild(image)
-
+    img.style.backgroundImage = "url('./assets/img/img-2.jpg')"
 }
-
-scrollDown()
-function scrollDown(){
-    document.addEventListener('scroll', ()=>{
-        console.log('Scroll')
-    })
-}
+setInterval(imagens, interval)
