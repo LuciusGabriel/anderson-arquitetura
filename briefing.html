@@ -5,54 +5,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BRIEFING</title>
+    <link rel="stylesheet" href="assets/css/style-briefing.css">
 </head>
 <body>
     <form action="https://formsubmit.co/lucius_gabriel@hotmail.com" method="POST" id="formulario">
         <fieldset>
           <legend>Questionário de Briefing</legend>
-          <label>Cliente:</label><input class="campo_nome" name="nome" type="text"><br>
-          <label>Email:</label><input class="campo_email" name="email" type="email"><br>
+          <label>Cliente: </label><input class="campo_nome space" name="nome" type="text" size="30"><br>
+          <label>Email: </label><input class="campo_email space" name="email" type="email"><br>
 
           <label>2. Selecione a opção que melhor se encaixa com o que precisa:</label><br>
             <input type="radio" id="construcao-casa" name="first" value="construcao-casa">
             <label for="construcao-casa">Construção de Casa</label><br>
-            <input type="radio" id="reforma-casa" name="first" value="reforma-casa">
+            <input type="radio" id="reforma-casa" name="first" value="reforma-casa" checked>
             <label for="reforma-casa">Reforma de Casa</label><br>
             <input type="radio" id="reforma-total-ap" name="first" value="reforma-total-ap">
             <label for="reforma-total-ap">Reforma Total de Apartamento</label><br>
-            <input type="radio" id="reforma-alg-amb" name="first" value="reforma-alg-amb">
+            <input type="radio" id="reforma-alg-amb" class="space" name="first" value="reforma-alg-amb">
             <label for="reforma-alg-amb">Reforma de Alguns Ambientes</label><br>
 
-           <label>3. Selecione a opção que melhor se encaixa com o que precisa:</label><br>
-           <select name="second">
-                <option value="construcao-casa"selected>Construção de Casa</option>
-                <option value="reforma-casa">Reforma de Casa</option>
-                <option value="reforma-total-ap">Reforma Total de Apartamento</option>
-            </select><br>
+            <label>4. Possui Rede Social? Se sim, qual?</label><input class="campo_rede_social space" name="redesocial" type="redesocial"><br>
 
-            <label>4. Possui Rede Social? Se sim, qual?</label><input class="campo_rede_social" name="redesocial" type="redesocial"><br>
-            <label>5. Estado Civil</label><input class="campo_estado_civil" name="estado_civil" type="estado_civil"><br>
-            <label>6. Possui Religião? Se sim, qual?</label><input class="campo_religiao" name="religiao" type="religiao"><br>
-            <label>7. Qual sua profissão?</label><input class="campo_profissao" name="profissao" type="profissao"><br>
-            <label>8. Possui filhos? Se sim, quanto?</label><input class="campo_filhos" name="filhos" type="filhos"><br>
-            <label>9. Qual a idade dos seus filhos?</label><input class="campo_idade_filhos" name="idade_filhos" type="idade_filhos"><br>
-            <label>10. Você tem ou pretende ter empregados? (Quantos, tempo de serviço, dormem em casa?)</label><input class="campo_empregados" name="empregados" type="empregados"><br>
-            <label>11. Melhor telefone para entrarmos em contato?</label><input class="campo_telefone_contato" name="telefone_contato" type="telefone_contato"><br>
-            <label>12.	Qual a melhor forma para entrarmos em contato durante o projeto?</label>
+            <label>5. Estado Civil</label><input class="campo_estado_civil space" name="estado_civil" type="estado_civil"><br>
+
+            <label>6. Possui Religião? Se sim, qual?</label><input class="campo_religiao space" name="religiao" type="religiao"><br>
+
+            <label>7. Qual sua profissão?</label><input class="campo_profissao space" name="profissao" type="profissao"><br>
+
+            <label>8. Possui filhos? Se sim, quanto?</label><input class="campo_filhos space" name="filhos" type="filhos"><br>
+
+            <label>9. Qual a idade dos seus filhos?</label><input class="campo_idade_filhos space" name="idade_filhos" type="idade_filhos"><br>
+
+            <label>10. Você tem ou pretende ter empregados? (Quantos, tempo de serviço, dormem em casa?)</label><input class="campo_empregados space" name="empregados" type="empregados"><br>
+
+            <label>11. Melhor telefone para entrarmos em contato?</label><input class="campo_telefone_contato space" name="telefone_contato" type="telefone_contato"><br>
+
+            <label class="space-label">12.	Qual a melhor forma para entrarmos em contato durante o projeto?</label>
             <select name="contato_durante_obra">
               <option value="whatsapp"selected>Whatsapp</option>
               <option value="telefone">Telefone</option>
               <option value="sms">SMS</option>
               <option value="email">Email</option>
               <option value="telegram">Telegram</option>
-          </select><br><br>
-          <label>13. Qual o melhor horário para entrarmos em contato?</label><input class="campo_melhor_horário" name="melhor_horario" type="melhor_horario"><br>
-          <label>14. Dados do sócio, cônjuge ou outra pessoa que tenha poder de decisão neste projeto? Quem é, qual nome e idade?</label><input class="campo_decisao_projeto" name="decisao_projeto" type="decisao_projeto"><br>
-          <label>15. Endereço da obra: </label><input class="campo_endereco_obra" name="endereco_obra" type="endereco_obra"><br>
-          <label>16. Quantos metros quadrados tem o imóvel ou pretende ter? Pode ser uma estimativa.</label><input class="campo_tamanho_obra" name="tamanho_obra" type="tamanho_obra"><br>
-          <label>17. Você possui os documentos do lote/imóvel atualizados? (Registro e escritura)</label><input class="campo_documentos_obra" name="documentos_obra" type="documentos_obra"><br>
-          <label>18. Você possui um levantamento topográfico do terreno (dimensões e relevo)?</label><input class="campo_levantamento_topografico" name="levantamento_topografico" type="levantamento_topografico"><br>
-          <label>19. Quais os seus objetivos com este projeto? Descreva em pelo menos um parágrafo o que você espera desse lugar? Me conta aqui aquilo que realmente faz a diferença pra você!<br></label><textarea class="objetivos_projeto" name="objetivos_projeto" cols="35" rows="4"></textarea><br>
+          </select><br>
+
+          <label>13. Qual o melhor horário para entrarmos em contato?</label><input class="campo_melhor_horario space" name="melhor_horario" type="melhor_horario"><br>
+
+          <label>14. Dados do sócio, cônjuge ou outra pessoa que tenha poder de decisão neste projeto? Quem é, qual nome e idade?</label><input class="campo_decisao_projeto space" name="decisao_projeto" type="decisao_projeto"><br>
+
+          <label>15. Endereço da obra: </label><input class="campo_endereco_obra space" name="endereco_obra" type="endereco_obra"><br>
+
+          <label>16. Quantos metros quadrados tem o imóvel ou pretende ter? Pode ser uma estimativa.</label><input class="campo_tamanho_obra space" name="tamanho_obra" type="tamanho_obra"><br>
+
+          <label>17. Você possui os documentos do lote/imóvel atualizados? (Registro e escritura)</label><input class="campo_documentos_obra space" name="documentos_obra" type="documentos_obra"><br>
+
+          <label>18. Você possui um levantamento topográfico do terreno (dimensões e relevo)?</label><input class="campo_levantamento_topografico space" name="levantamento_topografico" type="levantamento_topografico"><br>
+
+          <label>19. Quais os seus objetivos com este projeto? Descreva em pelo menos um parágrafo o que você espera desse lugar? Me conta aqui aquilo que realmente faz a diferença pra você!<br></label><textarea class="objetivos_projeto space" name="objetivos_projeto" cols="35" rows="4"></textarea><br>
 
 
 
