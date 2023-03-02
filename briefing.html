@@ -8,13 +8,13 @@
     <link rel="stylesheet" href="assets/css/style-briefing.css">
 </head>
 <body>
-    <form action="https://formsubmit.co/lucius_gabriel@hotmail.com" method="POST" id="formulario">
+    <form action="https://formsubmit.co/lucius_gabriel@hotmail.com" method="POST">
         <fieldset>
           <legend>Questionário de Briefing</legend>
           <label>Cliente: </label><input class="campo_nome space" name="nome" type="text" size="30"><br>
           <label>Email: </label><input class="campo_email space" name="email" type="email"><br>
 
-          <label>2. Selecione a opção que melhor se encaixa com o que precisa:</label><br>
+          <label>1. Selecione a opção que melhor se encaixa com o que precisa:</label><br>
             <input type="radio" id="construcao-casa" name="first" value="construcao-casa">
             <label for="construcao-casa">Construção de Casa</label><br>
             <input type="radio" id="reforma-casa" name="first" value="reforma-casa" checked>
@@ -24,23 +24,23 @@
             <input type="radio" id="reforma-alg-amb" class="space" name="first" value="reforma-alg-amb">
             <label for="reforma-alg-amb">Reforma de Alguns Ambientes</label><br>
 
-            <label>4. Possui Rede Social? Se sim, qual?</label><input class="campo_rede_social space" name="redesocial" type="redesocial"><br>
+            <label>2. Possui Rede Social? Se sim, qual?</label><input class="campo_rede_social space" name="redesocial" type="redesocial"><br>
 
-            <label>5. Estado Civil</label><input class="campo_estado_civil space" name="estado_civil" type="estado_civil"><br>
+            <label>3. Estado Civil</label><input class="campo_estado_civil space" name="estado_civil" type="estado_civil"><br>
 
-            <label>6. Possui Religião? Se sim, qual?</label><input class="campo_religiao space" name="religiao" type="religiao"><br>
+            <label>4. Possui Religião? Se sim, qual?</label><input class="campo_religiao space" name="religiao" type="religiao"><br>
 
-            <label>7. Qual sua profissão?</label><input class="campo_profissao space" name="profissao" type="profissao"><br>
+            <label>5. Qual sua profissão?</label><input class="campo_profissao space" name="profissao" type="profissao"><br>
 
-            <label>8. Possui filhos? Se sim, quanto?</label><input class="campo_filhos space" name="filhos" type="filhos"><br>
+            <label>6. Possui filhos? Se sim, quanto?</label><input class="campo_filhos space" name="filhos" type="filhos"><br>
 
-            <label>9. Qual a idade dos seus filhos?</label><input class="campo_idade_filhos space" name="idade_filhos" type="idade_filhos"><br>
+            <label>7. Qual a idade dos seus filhos?</label><input class="campo_idade_filhos space" name="idade_filhos" type="idade_filhos"><br>
 
-            <label>10. Você tem ou pretende ter empregados? (Quantos, tempo de serviço, dormem em casa?)</label><input class="campo_empregados space" name="empregados" type="empregados"><br>
+            <label>8. Você tem ou pretende ter empregados? (Quantos, tempo de serviço, dormem em casa?)</label><input class="campo_empregados space" name="empregados" type="empregados"><br>
 
-            <label>11. Melhor telefone para entrarmos em contato?</label><input class="campo_telefone_contato space" name="telefone_contato" type="telefone_contato"><br>
+            <label>9. Melhor telefone para entrarmos em contato?</label><input class="campo_telefone_contato space" name="telefone_contato" type="telefone_contato"><br>
 
-            <label class="space-label">12.	Qual a melhor forma para entrarmos em contato durante o projeto?</label>
+            <label class="space-label">10.	Qual a melhor forma para entrarmos em contato durante o projeto?</label>
             <select name="contato_durante_obra">
               <option value="whatsapp"selected>Whatsapp</option>
               <option value="telefone">Telefone</option>
@@ -49,20 +49,44 @@
               <option value="telegram">Telegram</option>
           </select><br>
 
-          <label>13. Qual o melhor horário para entrarmos em contato?</label><input class="campo_melhor_horario space" name="melhor_horario" type="melhor_horario"><br>
+          <label>11. Qual o melhor horário para entrarmos em contato?</label><input class="campo_melhor_horario space" name="melhor_horario" type="melhor_horario"><br>
 
-          <label>14. Dados do sócio, cônjuge ou outra pessoa que tenha poder de decisão neste projeto? Quem é, qual nome e idade?</label><input class="campo_decisao_projeto space" name="decisao_projeto" type="decisao_projeto"><br>
+          <label>12. Dados do sócio, cônjuge ou outra pessoa que tenha poder de decisão neste projeto? Quem é, qual nome e idade?</label><input class="campo_decisao_projeto space" name="decisao_projeto" type="decisao_projeto"><br>
 
-          <label>15. Endereço da obra: </label><input class="campo_endereco_obra space" name="endereco_obra" type="endereco_obra"><br>
+          <label>13. Endereço da obra: </label><input class="campo_endereco_obra space" name="endereco_obra" type="endereco_obra"><br>
 
-          <label>16. Quantos metros quadrados tem o imóvel ou pretende ter? Pode ser uma estimativa.</label><input class="campo_tamanho_obra space" name="tamanho_obra" type="tamanho_obra"><br>
+          <label>14. Quantos metros quadrados tem o imóvel ou pretende ter? Pode ser uma estimativa.</label><input class="campo_tamanho_obra space" name="tamanho_obra" type="tamanho_obra"><br>
 
-          <label>17. Você possui os documentos do lote/imóvel atualizados? (Registro e escritura)</label><input class="campo_documentos_obra space" name="documentos_obra" type="documentos_obra"><br>
+          <label>15. Você possui os documentos do lote/imóvel atualizados? (Registro e escritura)</label><input class="campo_documentos_obra space" name="documentos_obra" type="documentos_obra"><br>
 
-          <label>18. Você possui um levantamento topográfico do terreno (dimensões e relevo)?</label><input class="campo_levantamento_topografico space" name="levantamento_topografico" type="levantamento_topografico"><br>
+          <label>16. Você possui um levantamento topográfico do terreno (dimensões e relevo)?</label><input class="campo_levantamento_topografico space" name="levantamento_topografico" type="levantamento_topografico"><br>
 
-          <label>19. Quais os seus objetivos com este projeto? Descreva em pelo menos um parágrafo o que você espera desse lugar? Me conta aqui aquilo que realmente faz a diferença pra você!<br></label><textarea class="objetivos_projeto space" name="objetivos_projeto" cols="35" rows="4"></textarea><br>
+          <label>17. Quais os seus objetivos com este projeto? Descreva em pelo menos um parágrafo o que você espera desse lugar? Me conta aqui aquilo que realmente faz a diferença pra você!<br></label><textarea class="objetivos_projeto space" name="objetivos_projeto" cols="35" rows="4"></textarea><br>
 
+          <label>18. Estimativa de gastos para a obra? Tem algum limite de orçamento definido? Descreva, por favor, o quanto esse limite é rígido ou se pode ter alguma margem e variação? Precisamos de sinceridade e confiança nesse tópico, pois nosso compromisso é fazer a obra caber no seu bolso.</label><br><textarea class="space" name="gastos_para_obra" cols="35" rows="4"></textarea><br>
+
+          <label class="space-label">19.	Em quantos meses você gostaria de iniciar a obra?</label>
+            <select name="inicio_obra">
+              <option value="1a3meses"selected>1 a 3 Meses</option>
+              <option value="3a6meses">3 a 6 Meses</option>
+              <option value="6a9meses">6 a 9 Meses</option>
+              <option value="9a12meses">9 a 12 Meses</option>
+              <option value="12a18meses">12 a 18 Meses</option>
+              <option value="18a24meses">18 a 24 Meses</option>
+          </select><br>
+
+          <label class="space-label">20. Em quantos meses você gostaria de ter a obra pronta?</label>
+            <select name="inicio_obra">
+              <option value="6a9meses" selected>6 a 9 Meses</option>
+              <option value="9a12meses">9 a 12 Meses</option>
+              <option value="12a18meses">12 a 18 Meses</option>
+              <option value="18a24meses">18 a 24 Meses</option>
+              <option value="24a36meses">24 a 36 Meses</option>
+          </select><br>
+
+          <label>21.	Você tem mais alguma observação importante a fazer sobre o projeto? (coisas que você possui, preferências por projeto sustentável, preferências por tipo de design, ou qualquer outra informação que possa influenciar na concepção do projeto)</label><br><textarea class="space" name="gastos_para_obra" cols="35" rows="4"></textarea><br>
+
+          
 
 
 
