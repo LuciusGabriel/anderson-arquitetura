@@ -5,10 +5,26 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 
 const navigation = [
-  { label: "Projetos", href: "/projetos" },
-  { label: "Escritório", href: "/#escritorio" },
-  { label: "Serviços", href: "/#servicos" },
-  { label: "Contato", href: "/#contato" },
+  {
+    number: "01",
+    label: "Projetos",
+    href: "/projetos",
+  },
+  {
+    number: "03",
+    label: "Escritório",
+    href: "/#escritorio",
+  },
+  {
+    number: "04",
+    label: "Serviços",
+    href: "/#servicos",
+  },
+  {
+    number: "05",
+    label: "Contato",
+    href: "/#contato",
+  },
 ];
 
 export function Header() {
@@ -42,9 +58,8 @@ export function Header() {
               width={52}
               height={38}
               priority
-              className={`h-auto w-[52px] transition-all duration-300 lg:w-[64px] ${
-                isMenuOpen ? "brightness-0 invert" : ""
-              }`}
+              className={`h-auto w-[52px] transition-all duration-300 lg:w-[64px] ${isMenuOpen ? "brightness-0 invert" : ""
+                }`}
             />
           </Link>
 
@@ -58,19 +73,17 @@ export function Header() {
             className="relative z-[70] flex h-10 w-10 items-center justify-center lg:hidden"
           >
             <span
-              className={`absolute block h-px bg-white transition-all duration-300 ${
-                isMenuOpen
+              className={`absolute block h-px bg-white transition-all duration-300 ${isMenuOpen
                   ? "w-6 rotate-45"
                   : "w-6 -translate-y-[4px]"
-              }`}
+                }`}
             />
 
             <span
-              className={`absolute block h-px bg-white transition-all duration-300 ${
-                isMenuOpen
+              className={`absolute block h-px bg-white transition-all duration-300 ${isMenuOpen
                   ? "w-6 -rotate-45"
                   : "w-4 translate-x-1 translate-y-[4px]"
-              }`}
+                }`}
             />
           </button>
 
@@ -92,11 +105,10 @@ export function Header() {
       {/* Menu mobile fullscreen */}
       <div
         id="mobile-menu"
-        className={`fixed inset-0 z-50 bg-[#25292b] text-[#f2f0eb] transition-all duration-500 ease-out lg:hidden ${
-          isMenuOpen
+        className={`fixed inset-0 z-50 bg-[#25292b] text-[#f2f0eb] transition-all duration-500 ease-out lg:hidden ${isMenuOpen
             ? "visible translate-y-0 opacity-100"
             : "invisible -translate-y-full opacity-0"
-        }`}
+          }`}
       >
         <div className="flex min-h-[100svh] flex-col px-5 pb-8 pt-28">
           {/* Identificação */}
@@ -113,24 +125,27 @@ export function Header() {
           {/* Links */}
           <nav className="my-auto">
             <div className="border-t border-white/15">
-              {navigation.map((item, index) => (
+              {navigation.map((item) => (
                 <Link
                   key={item.label}
                   href={item.href}
                   onClick={closeMenu}
-                  className="group flex items-center justify-between border-b border-white/15 py-6"
+                  className="group flex items-center justify-between border-b border-white/15 py-5"
                 >
-                  <div className="flex items-baseline gap-5">
-                    <span className="w-5 text-[9px] tracking-[0.15em] text-white/35">
-                      {String(index + 1).padStart(2, "0")}
+                  <div className="flex items-start gap-5">
+                    <span className="pt-1 text-[10px] tracking-[0.18em] text-white/50">
+                      {item.number}
                     </span>
 
-                    <span className="text-[28px] font-light uppercase leading-none tracking-[-0.03em]">
+                    <span className="text-[32px] font-light uppercase leading-none tracking-[-0.03em] text-white">
                       {item.label}
                     </span>
                   </div>
 
-                  <span className="text-xl font-light text-white/60">
+                  <span
+                    aria-hidden="true"
+                    className="text-xl font-light text-white/70 transition-transform duration-300 group-hover:translate-x-1"
+                  >
                     →
                   </span>
                 </Link>
